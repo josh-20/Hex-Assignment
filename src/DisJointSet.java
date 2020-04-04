@@ -22,10 +22,12 @@ public class DisJointSet {
             set[r2] = r1;
         }
     }
+
     public int find(int x){
         if (set[x] < 0) return x;
         else return set[x] = find(set[x]);
     }
+
     public String toString(){
         StringBuilder sb = new StringBuilder();
         int count = 0;

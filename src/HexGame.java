@@ -149,6 +149,7 @@ public class HexGame {
         }
         return legalNeighbors;
     }
+
     public String toString(){
         StringBuilder sb = new StringBuilder();
         int count = 0;

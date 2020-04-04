@@ -7,11 +7,12 @@ public class playGame {
     public static String ANSI_Red = "\u001B[31m";
     public static String ANSI_RESET = "\u001B[30m";
     public static String ANSI_BLUE = "\u001B[34m";
+    static final int boardSize = 126;
 
     public void newGame(String file1) throws FileNotFoundException {
         HexGame hg = new HexGame();
-        DisJointSet dj = new DisJointSet(126);
-        String [] colorGame = new String[126];
+        DisJointSet dj = new DisJointSet(boardSize);
+        String [] colorGame = new String[boardSize];
         Arrays.fill(colorGame, "0");
         File file = new File(file1);
         int redMoves = 0; int blueMoves = 0; int count = 1;
