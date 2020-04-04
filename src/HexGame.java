@@ -35,7 +35,7 @@ public class HexGame {
         dj.Union(firstNum,secondNum);
     }
     private ArrayList<Integer> findNeighbors(int numToCheck, DisJointSet dj, String [] colorGame, String color) {
-        // Array for each possible move check for all types of neighbors
+        // Array for each possible move to check for any type of neighbors
         int[] inc = {-11, -10, -1, 1, 10, 11};
         int[] leftE = {-11,-10, 1, 11};
         int[] rightE = {-11, -1, 10, 11};

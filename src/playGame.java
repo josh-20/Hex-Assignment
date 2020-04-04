@@ -14,9 +14,7 @@ public class playGame {
         String [] colorGame = new String[126];
         Arrays.fill(colorGame, "0");
         File file = new File(file1);
-        int redMoves = 0;
-        int blueMoves = 0;
-        int count = 1;
+        int redMoves = 0; int blueMoves = 0; int count = 1;
         Scanner moves = new Scanner(file);
         while (moves.hasNextInt()) {
 
