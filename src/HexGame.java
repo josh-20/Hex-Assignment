@@ -21,7 +21,7 @@ public class HexGame {
                union(numToCheck,i,dj);
                if(dj.find(122) == dj.find(123)){
                    System.out.println("|------------Blue has Won!! With " + moves + " Moves!-------------|");
-                   break;
+                   return colorGame;
                }
                else if(dj.find(124) == dj.find(125)){
                    System.out.println("|------------Red has Won!! With "  + moves + " Moves!-------------|");

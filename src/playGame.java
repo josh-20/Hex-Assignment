@@ -35,6 +35,7 @@ public class playGame {
         System.out.println(hg.toString());
 
     }
+    // To run
     public static void main(String[] args) throws FileNotFoundException {
         playGame p = new playGame();
         p.newGame("moves.txt");
